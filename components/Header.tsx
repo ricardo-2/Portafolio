@@ -43,8 +43,8 @@ const Header = () => {
             ))}
         </div>
         <SearchButton />
-        <ThemeSwitch />
-        <MobileNav />
+        {/* <ThemeSwitch />
+        <MobileNav /> */}
       </div>
     </header>
   )
