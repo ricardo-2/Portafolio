@@ -4,16 +4,14 @@ import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
 
-
-
 //const MAX_DISPLAY = 1
 
 export default function Home({ posts }) {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between gap-8 py-8">
+    <div className="flex flex-col items-center justify-between gap-8 py-8 md:flex-row">
       {/* Sección izquierda: texto + botón */}
-      <div className="md:w-1/2 space-y-4 text-center md:text-left">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100">
+      <div className="space-y-4 text-center md:w-1/2 md:text-left">
+        <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-6xl dark:text-gray-100">
           Richard Rosales
         </h1>
         <p className="text-lg text-gray-500 dark:text-gray-400">
@@ -23,9 +21,9 @@ export default function Home({ posts }) {
         <a
           href="/Luis Ricardo Morales Rosales2.pdf"
           download
-          className="inline-flex items-center gap-2 px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+          className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-6 py-3 text-white transition hover:bg-blue-700"
         >
-         <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1"
             fill="none"
@@ -44,12 +42,12 @@ export default function Home({ posts }) {
       </div>
 
       {/* Sección derecha: imagen */}
-      <div className="md:w-1/2 flex justify-center md:justify-end">
-        <div className="w-64 h-64 overflow-hidden rounded-xl shadow-xl border-4 border-blue-500 dark:border-blue-300 transform transition-transform duration-300 hover:scale-105 hover:shadow-blue-400">
+      <div className="flex justify-center md:w-1/2 md:justify-end">
+        <div className="h-64 w-64 transform overflow-hidden rounded-xl border-4 border-blue-500 shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-blue-400 dark:border-blue-300">
           <img
             src="/static/images/perfil.png"
             alt="Richard Rosales"
-            className="w-full h-full object-cover"
+            className="h-full w-full object-cover"
           />
         </div>
       </div>
@@ -57,8 +55,8 @@ export default function Home({ posts }) {
   )
 }
 
-
- {/* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
+{
+  /* <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
             const { slug, date, title, summary, tags } = post
@@ -108,9 +106,11 @@ export default function Home({ posts }) {
               </li>
             )
           })}
-        </ul> */}
-     
-      {/* {posts.length > MAX_DISPLAY && (
+        </ul> */
+}
+
+{
+  /* {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base leading-6 font-medium">
           <Link
             href="/blog"
@@ -125,4 +125,5 @@ export default function Home({ posts }) {
         <div className="flex items-center justify-center pt-4">
           <NewsletterForm />
         </div>
-      )} */}
+      )} */
+}
