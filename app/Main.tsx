@@ -12,6 +12,9 @@ export default function Home({ posts }) {
       {/* Sección izquierda: texto + botón */}
       <div className="space-y-4 text-center md:w-1/2 md:text-left">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-6xl dark:text-gray-100">
+          GIRA TU CELULAR PARA VER EL MENU
+        </h1>
+        <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-6xl dark:text-gray-100">
           Richard Rosales
         </h1>
         <p className="text-lg text-gray-500 dark:text-gray-400">
