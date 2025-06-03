@@ -8,7 +8,7 @@ import NewsletterForm from 'pliny/ui/NewsletterForm'
 
 export default function Home({ posts }) {
   return (
-    <div className="flex flex-col items-center justify-between gap-8 py-8 md:flex-row">
+    <div className="flex flex-col-reverse items-center gap-8 py-8 md:flex-row md:justify-between">
       {/* Sección izquierda: texto + botón */}
       <div className="space-y-4 text-center md:w-1/2 md:text-left">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-6xl dark:text-gray-100">
